@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FATURA-O-EDV/static/css/main.f6e33427.css",
-    "main.js": "/FATURA-O-EDV/static/js/main.65f32f74.js",
+    "main.js": "/FATURA-O-EDV/static/js/main.b3bf07d9.js",
     "static/media/fundo.jpg": "/FATURA-O-EDV/static/media/fundo.8b6af06fe0e621b0ec42.jpg",
     "static/media/logo.png": "/FATURA-O-EDV/static/media/logo.b49fbde1e844adc92694.png",
     "static/media/fa-solid-900.woff2": "/FATURA-O-EDV/static/media/fa-solid-900.f54756da1f3d1b88887f.woff2",
@@ -10,10 +10,10 @@
     "static/media/fa-v4compatibility.woff2": "/FATURA-O-EDV/static/media/fa-v4compatibility.24fc9d217708cb3f0362.woff2",
     "index.html": "/FATURA-O-EDV/index.html",
     "main.f6e33427.css.map": "/FATURA-O-EDV/static/css/main.f6e33427.css.map",
-    "main.65f32f74.js.map": "/FATURA-O-EDV/static/js/main.65f32f74.js.map"
+    "main.b3bf07d9.js.map": "/FATURA-O-EDV/static/js/main.b3bf07d9.js.map"
   },
   "entrypoints": [
     "static/css/main.f6e33427.css",
-    "static/js/main.65f32f74.js"
+    "static/js/main.b3bf07d9.js"
   ]
 }
