@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.sidebar-icon {
+  transition: all 0.2s ease;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Podes meter no teu ficheiro index.css ou globals.css */
+.sidebar-icon {
+  @apply w-11 h-11 flex flex-col items-center justify-center 
+         rounded-xl bg-white/10 text-white/90 
+         hover:bg-white hover:text-primary 
+         transition-all duration-300 ease-in-out 
+         shadow-md cursor-pointer relative;
+}
+
+.sidebar-icon i {
+  @apply text-lg;
+}
+
+.sidebar-label {
+  @apply text-[10px] mt-1 font-medium opacity-0 
+         transition-all duration-300;
+}
+
+.sidebar-icon:hover .sidebar-label {
+  @apply opacity-100 translate-y-1;
+}

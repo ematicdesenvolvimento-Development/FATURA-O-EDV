@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #003883;
+  color: #fff;
+  padding: 20px 10px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-item {
+  margin: 20px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Top buttons */
+.top-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.top-buttons button {
+  background: #003883;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.top-buttons button:hover {
+  background: #0055aa;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.card-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stats-banner {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.stats-card {
+  flex: 2;
+}
+
+.banner-card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(45deg, orange, green, blue, red);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* Clientes TOP */
+.clientes-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.clientes-card th,
+.clientes-card td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.status.ativo {
+  color: green;
+  font-weight: bold;
+}
