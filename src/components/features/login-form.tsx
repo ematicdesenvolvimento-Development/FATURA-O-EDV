@@ -2,7 +2,7 @@
 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 import { loginSchema, type LoginFormData } from '../../schemas/login-schemas';
 
@@ -10,6 +10,8 @@ import { loginSchema, type LoginFormData } from '../../schemas/login-schemas';
 import LogoImg from "../../assets/img/logo-1.png"
 
 export function LoginForm() {
+    const navigate = useNavigate();
+
     const {
         register,
         handleSubmit,
@@ -25,6 +27,7 @@ export function LoginForm() {
 
     const onSubmit = async (data: LoginFormData) => {
         console.log(data)
+        navigate("/dashboard", { replace: true });
     };
 
     return (
@@ -77,7 +80,7 @@ export function LoginForm() {
                     </label>
                     <Link
                         to="/forgot-password"
-                        className="text-secondary hover:text-primary hover:underline"  
+                        className="text-secondary hover:text-primary hover:underline"
                     >
                         Esqueceu sua senha?
                     </Link>

@@ -8,6 +8,7 @@ export const forgotPasswordSchema = z.object({
       error: (iss) =>
         iss.input === undefined ? "Nome é obrigatório" : "Campo inválido",
     })
+    .min(1, "Nome é obrigatório")
     .max(50, "Nome deve ter no maxímo 50 caracteres"),
 });
 

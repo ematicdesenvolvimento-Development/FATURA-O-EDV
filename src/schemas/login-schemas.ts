@@ -8,12 +8,14 @@ export const loginSchema = z.object({
       error: (iss) =>
         iss.input === undefined ? "Nome é obrigatório" : "Campo inválido",
     })
+    .min(1, "Nome é obrigatório")
     .max(50, "Nome deve ter no maxímo 50 caracteres"),
   senha: z
     .string({
       error: (iss) =>
         iss.input === undefined ? "Senha é obrigatório" : "Campo inválido",
     })
+    .min(1, "Senha é obrigatória")
     .max(16, "Senha deve ter no maxímo 16 caracteres"),
   lembrar: z.boolean().nullable(),
 });
