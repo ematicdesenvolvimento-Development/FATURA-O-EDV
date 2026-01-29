@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router";
+import { createBrowserRouter } from "react-router";
 
 import LayoutAuth from "../components/layout/layout-auth";
 import LayoutDashboard from "../components/layout/layout-dashboard";
@@ -6,7 +6,7 @@ import Login from "../pages/auth/login";
 import ForgotPassword from "../pages/auth/forgot-password";
 import Dashboard from "../pages/dashboard";
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
   {
     path: "/",
     element: <LayoutAuth />,
@@ -38,6 +38,4 @@ const router = createBrowserRouter([
   }
 ]);
 
-export default function AppRouter() {
-  return <RouterProvider router={router} />
-}
+
