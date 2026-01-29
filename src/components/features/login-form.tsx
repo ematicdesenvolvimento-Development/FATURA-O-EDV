@@ -2,6 +2,7 @@
 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
+import { Link } from "react-router";
 
 import { loginSchema, type LoginFormData } from '../../schemas/login-schemas';
 
@@ -74,13 +75,12 @@ export function LoginForm() {
                         />
                         <span className="text-gray-700">Lembrar</span>
                     </label>
-                    <a
-                        href="#"
-                        className="text-primary hover:text-secondary hover:underline"
-                        onClick={(e) => e.preventDefault()}
+                    <Link
+                        to="/forgot-password"
+                        className="text-secondary hover:text-primary hover:underline"  
                     >
                         Esqueceu sua senha?
-                    </a>
+                    </Link>
                 </div>
 
                 <button

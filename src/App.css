@@ -27,5 +27,9 @@
 }
 
 .button-default{
-  @apply w-full rounded-md py-3 text-base font-bold text-white transition-colors bg-linear-65 from-primary to-secondary disabled:opacity-50
+  @apply w-full rounded-md py-2.5 text-base font-bold text-white transition-colors bg-linear-65 from-primary to-secondary disabled:opacity-50
+}
+
+.button-secondary{
+  @apply w-full rounded-md py-2.5 text-base font-medium transition-colors bg-white text-secondary border border-secondary disabled:opacity-50
 }
