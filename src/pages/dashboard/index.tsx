@@ -5,8 +5,8 @@ export default function Dashboard() {
     return (
         <>
             <div className="grid grid-cols-4 gap-6">
-                <div className="col-span-3 grid grid-cols-3 gap-6">
-                    <div className="space-y-4 col-span-full lg:col-span-1">
+                <div className="col-span-3 grid 2xl:grid-cols-3 xl:grid-cols-2 gap-6">
+                    <div className="grid gap-4 xl:grid-cols-3 2xl:grid-cols-1 col-span-full 2xl:col-span-1 h-fit">
                         <div className="rounded-md bg-white p-4 shadow-sm">
                             <p className="text-sm font-semibold text-secondary">STOCK 15%</p>
                         </div>
@@ -26,7 +26,8 @@ export default function Dashboard() {
 
                     <div className="lg:col-span-2 col-span-full">
                         <StatsChart />
-                    </div></div>
+                    </div>
+                </div>
 
                 <div className="space-y-4 rounded-md h-fit bg-white p-4 shadow-sm">
                     <div className="grid grid-cols-2 gap-4">
