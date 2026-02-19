@@ -2,14 +2,14 @@ import { createBrowserRouter } from "react-router";
 
 import LayoutAuth from "../components/layout/layout-auth";
 import LayoutDashboard from "../components/layout/layout-dashboard";
-import Login from "../pages/auth/login";
-import ForgotPassword from "../pages/auth/forgot-password";
+import Login from "../pages/auth/login/login";
+import ForgotPassword from "../pages/auth/forgot-password/forgot-password";
 import Dashboard from "../pages/dashboard";
-import Gestao from "../pages/dashboard/gestao";
-import Facturacao from "../pages/dashboard/facturacao";
-import POS from "../pages/dashboard/pos";
-import AGT from "../pages/dashboard/agt";
-import Configuracoes from "../pages/dashboard/configuracoes";
+import Gestao from "../pages/dashboard/gestao/gestao";
+import Facturacao from "../pages/dashboard/facturacao/facturacao";
+import POS from "../pages/dashboard/pos/pos";
+import AGT from "../pages/dashboard/agt/agt";
+import Configuracoes from "../pages/dashboard/configuracoes/configuracoes";
 
 export const router = createBrowserRouter([
   {
@@ -32,7 +32,7 @@ export const router = createBrowserRouter([
   },
 
   {
-    path: "/dashboard/*",
+    path: "/dashboard",
     element: <LayoutDashboard />,
     children: [
       {
