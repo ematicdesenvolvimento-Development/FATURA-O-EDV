@@ -23,7 +23,6 @@ export default function DetalhesLoja() {
         principal: true,
         ativo: true,
         dataCriacao: '2025-01-15',
-
     });
 
 

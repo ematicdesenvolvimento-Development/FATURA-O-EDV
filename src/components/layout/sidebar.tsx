@@ -5,6 +5,7 @@ import {
     Boxes,
     FileText,
     Grid3x3,
+    Landmark,
     Settings,
     ShoppingCart,
     User,
@@ -18,6 +19,7 @@ export function Sidebar() {
     const menuItems = [
         { label: 'Estatísticas', path: '/dashboard', icon: BarChart3 },
         { label: 'Gestão', path: '/dashboard/gestao', icon: Boxes },
+        { label: 'Conta bancárias', path: '/dashboard/contas', icon: Landmark },
         { label: 'Facturação', path: '/dashboard/facturacao', icon: FileText },
         { label: 'POS', path: '/dashboard/pos', icon: ShoppingCart },
         { label: 'AGT', path: '/dashboard/agt', icon: Grid3x3 },

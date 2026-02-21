@@ -1,15 +1,17 @@
-import { Boxes, CreditCard, Store } from "lucide-react";
+import { BanknoteArrowDown, HandCoins, Landmark, Notebook, PiggyBank } from "lucide-react";
 import { Link, useLocation } from "react-router";
+
 import { cn } from "../../utils/cn";
 
-export function SidebarGestao() {
+export function SidebarContas() {
     const location = useLocation();
 
     const menuItems = [
-        { label: 'Cartões de consumo', path: '/dashboard/gestao/cartoes', icon: CreditCard },
-        { label: 'Lojas / Caixas', path: '/dashboard/gestao/lojas', icon: Store },
-        { label: 'Itens 3', path: '/dashboard/gestao', icon: Boxes },
-        { label: 'Itens 4', path: '/dashboard/gestao', icon: Boxes },
+        { label: 'Movimento de Caixa', path: '/dashboard/contas/movimento-caixa', icon: BanknoteArrowDown },
+        { label: 'Contas Bancárias', path: '/dashboard/contas/contas-bancarias', icon: Landmark },
+        { label: 'Conta Corrente', path: '/dashboard/contas/conta-corrente', icon: PiggyBank },
+        { label: 'Relatórios', path: '/dashboard/contas/relatorios', icon: Notebook },
+        { label: 'Descontos', path: '/dashboard/contas/descontos', icon: HandCoins },
     ];
 
     const isActive = (path: string) => location.pathname === path;
