@@ -10,6 +10,9 @@ import Facturacao from "../pages/dashboard/facturacao/facturacao";
 import POS from "../pages/dashboard/pos/pos";
 import AGT from "../pages/dashboard/agt/agt";
 import Configuracoes from "../pages/dashboard/configuracoes/configuracoes";
+import DetalhesCartao from "../pages/dashboard/gestao/cartao-consumo/detalhes-cartao/detalhes-cartao";
+import NovoCartao from "../pages/dashboard/gestao/cartao-consumo/novo-cartao/novo-cartao";
+import CartoesConsumo from "../pages/dashboard/gestao/cartao-consumo/cartoes-consumo";
 
 export const router = createBrowserRouter([
   {
@@ -36,12 +39,26 @@ export const router = createBrowserRouter([
     element: <LayoutDashboard />,
     children: [
       {
-      index: true,
-      element: <Dashboard />,
+        index: true,
+        element: <Dashboard />,
       },
       {
         path: "gestao",
         element: <Gestao />,
+        children: [
+          {
+            path: "cartoes",
+            element: <CartoesConsumo />,
+          },
+          {
+            path: "cartoes/novo",
+            element: <NovoCartao />,
+          },
+          {
+            path: "cartoes/:id",
+            element: <DetalhesCartao />,
+          }
+        ]
       },
       {
         path: "facturacao",

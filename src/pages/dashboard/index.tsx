@@ -10,7 +10,7 @@ export default function Dashboard() {
                 description="Visão geral do seu negócio no +Faturas. Acompanhe vendas, faturação, clientes e desempenho financeiro em tempo real."
             />
 
-            <div className="grid grid-cols-4 gap-6">
+            <div className="grid grid-cols-4 gap-6 p-6">
                 <div className="col-span-3 grid 2xl:grid-cols-3 xl:grid-cols-2 gap-6">
                     <div className="grid gap-4 xl:grid-cols-3 2xl:grid-cols-1 col-span-full 2xl:col-span-1 h-fit">
                         <div className="rounded-md bg-white p-4 shadow-sm">

@@ -26,10 +26,18 @@
   @apply size-4 cursor-pointer rounded border border-gray-300 text-primary transition-colors focus:ring focus:ring-primary
 }
 
-.button-default{
-  @apply w-full rounded-md py-2.5 text-base font-bold text-white transition-colors bg-linear-65 from-primary to-secondary disabled:opacity-50
+.button-default {
+  @apply flex items-center rounded-md py-2.5 px-4 text-base font-bold text-white transition-colors bg-linear-65 from-primary to-secondary disabled:opacity-50 cursor-pointer
 }
 
-.button-secondary{
-  @apply w-full rounded-md py-2.5 text-base font-medium transition-colors bg-white text-secondary border border-secondary disabled:opacity-50
+.button-default-sm {
+  @apply flex items-center rounded-md py-2 px-3 text-sm font-medium text-white transition-colors bg-linear-65 from-primary to-secondary disabled:opacity-50 cursor-pointer
+}
+
+.button-secondary {
+  @apply flex items-center rounded-md py-2.5 px-4 text-base font-medium transition-colors bg-white text-secondary border border-secondary disabled:opacity-50 cursor-pointer
+}
+
+.button-secondary-sm {
+  @apply flex items-center rounded-md py-2 px-3 text-sm font-medium transition-colors bg-white text-secondary border border-secondary disabled:opacity-50 cursor-pointer
 }

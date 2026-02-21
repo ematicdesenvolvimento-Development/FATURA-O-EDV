@@ -4,11 +4,11 @@ import { TopBar } from "./top-bar";
 
 export default function LayoutDashboard() {
     return (
-        <div className="w-full min-h-screen bg-gray-50">
+        <div className="w-full flex min-h-screen bg-gray-50">
             <Sidebar />
-            <div className="ml-20 flex-1 transition-all duration-300 md:ml-70">
+            <div className="ml-20 h-full w-full flex-1 transition-all duration-300 md:ml-70">
                 <TopBar />
-                <main className="p-8 w-full">
+                <main className="w-full">
                     <Outlet />
                 </main>
             </div>

@@ -94,6 +94,5 @@ export function LoginForm() {
                 </button>
             </form>
         </div>
-
     );
 }

@@ -1,6 +1,5 @@
 'use client';
 
-
 interface Client {
     id: string;
     name: string;
@@ -46,7 +45,6 @@ export function TopClientsTable() {
                 <table className="w-full">
                     <thead>
                         <tr className="border-b border-gray-200 bg-gray-50">
-
                             <th className="px-6 py-3 text-left text-sm font-semibold text-gray-700">Clientes</th>
                             <th className="px-6 py-3 text-left text-sm font-semibold text-gray-700">Dados de Registro</th>
                             <th className="px-6 py-3 text-left text-sm font-semibold text-gray-700">Lojas</th>

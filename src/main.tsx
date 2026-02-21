@@ -5,9 +5,9 @@ import AppRouter from './context/app-router'
 import './App.css'
 
 createRoot(document.getElementById('root')!).render(
-  <HelmetProvider><StrictMode>
-
-    <AppRouter />
-
-  </StrictMode></HelmetProvider>,
+  <HelmetProvider>
+    <StrictMode>
+      <AppRouter />
+    </StrictMode>
+  </HelmetProvider>,
 )
