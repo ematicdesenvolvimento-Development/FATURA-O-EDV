@@ -10,9 +10,13 @@ import Facturacao from "../pages/dashboard/facturacao/facturacao";
 import POS from "../pages/dashboard/pos/pos";
 import AGT from "../pages/dashboard/agt/agt";
 import Configuracoes from "../pages/dashboard/configuracoes/configuracoes";
-import DetalhesCartao from "../pages/dashboard/gestao/cartao-consumo/detalhes-cartao/detalhes-cartao";
-import NovoCartao from "../pages/dashboard/gestao/cartao-consumo/novo-cartao/novo-cartao";
+import DetalhesCartao from "../pages/dashboard/gestao/cartao-consumo/detalhes/detalhes-cartao";
+import NovoCartao from "../pages/dashboard/gestao/cartao-consumo/novo/novo-cartao";
 import CartoesConsumo from "../pages/dashboard/gestao/cartao-consumo/cartoes-consumo";
+import NovaLoja from "../pages/dashboard/gestao/lojas/nova/nova-loja";
+import Lojas from "../pages/dashboard/gestao/lojas/lojas";
+import DetalhesLoja from "../pages/dashboard/gestao/lojas/detalhes/detalhes-loja";
+import NovoCaixa from "../pages/dashboard/gestao/lojas/novo-caixa/novo-caixa";
 
 export const router = createBrowserRouter([
   {
@@ -57,6 +61,22 @@ export const router = createBrowserRouter([
           {
             path: "cartoes/:id",
             element: <DetalhesCartao />,
+          },
+          {
+            path: "lojas",
+            element: <Lojas />,
+          },
+          {
+            path: "lojas/nova",
+            element: <NovaLoja />,
+          },
+          {
+            path: "lojas/:id/novo-caixa",
+            element: <NovoCaixa />,
+          },
+          {
+            path: "lojas/:id",
+            element: <DetalhesLoja />,
           }
         ]
       },

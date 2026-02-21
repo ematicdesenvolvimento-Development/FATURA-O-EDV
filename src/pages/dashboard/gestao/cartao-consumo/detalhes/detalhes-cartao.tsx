@@ -23,7 +23,7 @@ export default function DetalhesCartao() {
                     </button>
                 </div>
 
-                <div className="bw-full rounded-md bg-white p-8 shadow-sm">
+                <div className="w-full rounded-md bg-white p-8 shadow-sm">
                     <div className="grid grid-cols-3 gap-8">
                         <div>
                             <p className="text-gray-600 font-medium text-sm mb-1">Número</p>
